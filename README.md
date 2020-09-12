@@ -7,3 +7,27 @@ Implementación del algoritmo Grad-CAM para visualizar zonas de activición de u
 - http://gradcam.cloudcv.org
 - https://github.com/ramprs/grad-cam
 - https://www.cimat.mx/~mrivera/cursos/aprendizaje_profundo/GradCAM/GradCAM.html
+
+## ¿Cómo funciona?
+Grad-CAM utiliza la información de gradiente específica de la clase que fluye hacia la capa convolucional final de una CNN para producir un mapa de localización aproximado de las regiones importantes en la imagen. Puede combinarse con visualizaciones de espacio de píxeles existentes para crear una visualización discriminativa de clase de alta resolución, es decir, brinda información mostrando que las predicciones aparentemente irrazonables tienen explicaciones razonables.
+
+## Arquitectura del Grad-CAM
+<img src="network.png" width="500">
+
+## Resultados
+Se realizarón pruebas con una red base (Resnet50) y para una imagen con sus primeras 5 clases más probables.  
+Obteniendo como mapas de Grad-CAM lo siguiente (observece que el mapa de activación se ajusta dependiendo de la clase seleccionada):
+<img src="test1.png" width="500">
+<img src="test2.png" width="500">
+<img src="test3.png" width="500">
+<img src="test4.png" width="500">
+<img src="test5.png" width="500">
+
+Para otras imágenes también se obtuvierón los siguientes resultados:
+<img src="otro1.png" width="500">
+<img src="otro2.png" width="500">
+<img src="otro3.png" width="500">
+<img src="otro4.png" width="500">
+<img src="otro5.png" width="500">
+<img src="otro6.png" width="500">
+<img src="otro7.png" width="500">
